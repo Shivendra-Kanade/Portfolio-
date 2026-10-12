@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivendra Kanade - Java Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Greeting Popup -->
+<div id="greeting-popup" class="greeting-popup">
+    <div class="popup-content">
+        <div class="popup-close" onclick="closePopup()">&times;</div>
+        <h2>Welcome to My Portfolio!</h2>
+        <p>Thank you for visiting. I'm Shivendra Kanade, a Java Full Stack Developer passionate about building REST APIs, React interfaces, and full-stack applications.</p>
+        <button class="popup-btn" onclick="closePopup()">Explore My Work</button>
+    </div>
+</div>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="welcome-text">
+                <span class="welcome-animate">Welcome</span>
+            </div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p class="fade-in"><span>Java Full Stack Developer</span></p>
+            <h1 class="fade-in">Hi, I am <br><span>Shivendra Kanade</span></h1>
+            <p class="fade-in header-subtitle">Building REST APIs, React interfaces & Full-stack applications</p>
+        </div>
+    </div>
+</div>
+<!-- ------------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1 fade-in-left">
+                <img src="images/profile-photo.png">
+            </div>
+            <div class="about-col-2 fade-in-right">
+                <h1 class= "sub-title">About Me</h1>
+                <p>Java Full Stack Developer with internship experience building and shipping REST APIs, relational data models, and React-based interfaces for live production features. Validated 20+ API endpoints pre-deployment as part of a cross-functional engineering team, and independently designed two full-stack applications end-to-end — schema design through deployed UI. Strong foundation in OOP, data structures, and Java 8, with a consistent focus on clean, maintainable code.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Technical Skills')">Technical Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="Technical Skills">
+                    <ul>
+                        <li><span>Languages</span><br>Java, JavaScript (ES6+), SQL</li>
+                        <li><span>Backend</span><br>Spring Boot, Spring MVC, Spring Security, Hibernate, JPA, RESTful API Design</li>
+                        <li><span>Frontend</span><br>React.js, HTML5, CSS3, Responsive Web Design</li>
+                        <li><span>Databases</span><br>PostgreSQL, MySQL — schema design, indexing, query optimization</li>
+                        <li><span>Tools</span><br>Git, GitHub, Maven, Postman, VS Code</li>
+                        <li><span>Core Concepts</span><br>OOP, Collections, Generics, Exception Handling, Multithreading, Streams, Lambdas</li>
+                        <li><span>Practices</span><br>SOLID Principles, Agile/Scrum, CI/CD Fundamentals, API Documentation</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Software Developer Intern</span><br>Inbatoz Consultancy Pvt. Ltd. | Pune, Maharashtra | Apr 2026 – Present</li>
+                        <li><span>API Development</span><br>Engineered and integrated RESTful APIs using Java and Spring Boot for 3 live production features</li>
+                        <li><span>API Testing</span><br>Tested and validated 20+ API endpoints in Postman before every release, reducing post-release bugs</li>
+                        <li><span>Team Collaboration</span><br>Partnered with a 6-member cross-functional team to debug backend performance bottlenecks</li>
+                        <li><span>CI/CD</span><br>Owned CI/CD deployment steps for 4 production releases, gaining full-lifecycle exposure</li>
+                        <li><span>Documentation</span><br>Authored API documentation for 15+ endpoints, improving handoff clarity</li>
+                    </ul>
+                 </div>
+                <div class="tab-contents"id="Education">
+                    <ul>
+                        <li><span>2026</span><br>B.Tech – Computer Science & Engineering | M.S. Bidve Engineering College, Latur | CGPA: 6.7/10</li>
+                        <li><span>2022</span><br>HSC (Science, PCM) | Dayanand Science College, Latur | 66.33%</li>
+                        <li><span>2020</span><br>SSC | Shree Deshikendra Vidyalaya, Latur | 81%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------services----------- -->
+
+
+
+
+
+    <!-- ------------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class= "sub-title fade-in">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>File Share Application</h3>
+                    <p>Full-stack file management platform supporting secure upload, storage, deletion, and shareable-link access. Built with Java Spring Boot and React.js with PostgreSQL database.</p>
+                    <a href="https://file-share-7842.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>Taskify - Task Manager</h3>
+                    <p>Web app to manage your work and scheduling the work or tasks.</p>
+                    <a href="https://shivendra-kanade.github.io/Taskify/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3>DocuMatrix Website</h3>
+                    <p>It is a fast, private, and browser-based toolkit to manage your documents. Merge, compress, and convert PDFs, DOCX, and images instantly.</p>
+                    <a href="https://shivendra-kanade.github.io/DocuMatrix/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Shivendra-Kanade" class="btn"><i class="fab fa-github"></i> See more on GitHub</a>
+    </div>
+</div>
+<!-- ------------contact----------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left fade-in-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>shivendrakanade32@gmail.com</p>
+                <p><i class="fas fa-phone"></i>+91 9823467462</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shivendra-kanade-b2b85b271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Shivendra-Kanade"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/shivendra_kanade?igsh=NTlhb3YxY3BqOW5s"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="SHIVENDRA KANADE.pdf" download class="btn btn2"><i class="fas fa-download"></i> Download Resume</a>
+            </div>
+            <div class="contact-right fade-in-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name"required>
+                    <input type="email" name="Email" placeholder="Your Email"required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="Thank_You fade-in">
+            <p>Thank You</p>
+        </div>
+    </div>
+ </div>
+
+
+
+<script>
+
+
+    function opentab(tabname) {
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzdggZhSF7zTZhKJWC7htkYbM_LFU0zhDOoWtbLzFWVmGfkqE4QHVmiGOaSmFmENe5F1w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<!-- Scroll Animation Script -->
+<script>
+    // Add animation classes to elements
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add fade-in classes to sections
+        const aboutSection = document.getElementById('about');
+        const portfolioSection = document.getElementById('portfolio');
+        const contactSection = document.getElementById('contact');
+        const works = document.querySelectorAll('.work');
+
+        if (aboutSection) aboutSection.classList.add('fade-in');
+        if (portfolioSection) portfolioSection.classList.add('fade-in');
+        if (contactSection) contactSection.classList.add('fade-in');
+
+        works.forEach((work, index) => {
+            work.classList.add('fade-in-scale');
+            work.style.animationDelay = `${index * 0.2}s`;
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        const animatedElements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .fade-in-scale');
+        animatedElements.forEach(el => observer.observe(el));
+    });
+
+    // Greeting Popup functionality
+    function closePopup() {
+        const popup = document.getElementById('greeting-popup');
+        popup.classList.add('hidden');
+    }
+
+    // Auto-close popup after 5 seconds if user doesn't interact
+    setTimeout(function() {
+        const popup = document.getElementById('greeting-popup');
+        if (popup && !popup.classList.contains('hidden')) {
+            closePopup();
+        }
+    }, 5000);
+</script>
+
+</body>
+</html>
